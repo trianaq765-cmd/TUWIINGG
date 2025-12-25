@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Web animasi romantis malam tahun baru untuk sepasang kekasih yang sedang jatuh cinta">
+    <meta name="theme-color" content="#1a1a3a">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="💕 Malam Tahun Baru Romantis">
+    <meta property="og:description" content="Rayakan malam tahun baru bersama cinta tercinta">
+    <meta property="og:type" content="website">
+    
+    <title>💕 Malam Tahun Baru Romantis 💕</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-heart">💕</div>
+            <h2>Memuat Malam Romantis...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Toggle -->
+    <button class="audio-btn" id="audioBtn" aria-label="Toggle Music">
+        <span class="audio-icon">🎵</span>
+        <span class="audio-waves">
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    </button>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Stars Background -->
+        <div class="stars-container" id="starsContainer"></div>
+        
+        <!-- Shooting Stars -->
+        <div class="shooting-stars" id="shootingStars"></div>
+        
+        <!-- Moon -->
+        <div class="moon">
+            <div class="moon-crater"></div>
+            <div class="moon-crater small"></div>
+            <div class="moon-glow"></div>
+        </div>
+        
+        <!-- Clouds -->
+        <div class="clouds">
+            <div class="cloud cloud-1"></div>
+            <div class="cloud cloud-2"></div>
+            <div class="cloud cloud-3"></div>
+        </div>
+        
+        <!-- Fireworks Container -->
+        <div class="fireworks-container" id="fireworksContainer"></div>
+        
+        <!-- Lanterns Container -->
+        <div class="lanterns-container" id="lanternsContainer"></div>
+        
+        <!-- Snow Container -->
+        <div class="snow-container" id="snowContainer"></div>
+        
+        <!-- City Skyline -->
+        <div class="skyline" id="skyline"></div>
+        
+        <!-- Bridge Scene -->
+        <div class="bridge-scene">
+            <!-- Water -->
+            <div class="water">
+                <div class="water-reflection"></div>
+                <div class="water-sparkles" id="waterSparkles"></div>
+            </div>
+            
+            <!-- Bridge -->
+            <div class="bridge">
+                <div class="bridge-rail">
+                    <div class="rail-post"></div>
+                    <div class="rail-post"></div>
+                    <div class="rail-post"></div>
+                    <div class="rail-post"></div>
+                    <div class="rail-post"></div>
+                </div>
+                <div class="bridge-deck"></div>
+                <div class="bridge-support left"></div>
+                <div class="bridge-support right"></div>
+                <div class="bridge-lights">
+                    <div class="bridge-light"></div>
+                    <div class="bridge-light"></div>
+                    <div class="bridge-light"></div>
+                </div>
+            </div>
+            
+            <!-- Couple -->
+            <div class="couple" id="couple">
+                <!-- Boy -->
+                <div class="person boy">
+                    <div class="boy-hair"></div>
+                    <div class="boy-head">
+                        <div class="boy-eye left"></div>
+                        <div class="boy-eye right"></div>
+                        <div class="boy-smile"></div>
+                    </div>
+                    <div class="boy-neck"></div>
+                    <div class="boy-body">
+                        <div class="boy-collar"></div>
+                    </div>
+                    <div class="boy-arm left"></div>
+                    <div class="boy-arm right"></div>
+                    <div class="boy-legs">
+                        <div class="boy-leg left"></div>
+                        <div class="boy-leg right"></div>
+                    </div>
+                </div>
+                
+                <!-- Girl -->
+                <div class="person girl">
+                    <div class="girl-hair">
+                        <div class="hair-strand"></div>
+                    </div>
+                    <div class="girl-head">
+                        <div class="girl-eye left"></div>
+                        <div class="girl-eye right"></div>
+                        <div class="girl-blush left"></div>
+                        <div class="girl-blush right"></div>
+                        <div class="girl-smile"></div>
+                    </div>
+                    <div class="girl-neck"></div>
+                    <div class="girl-body"></div>
+                    <div class="girl-arm left"></div>
+                    <div class="girl-arm right"></div>
+                    <div class="girl-dress"></div>
+                    <div class="girl-legs">
+                        <div class="girl-leg left"></div>
+                        <div class="girl-leg right"></div>
+                    </div>
+                </div>
+                
+                <!-- Love Hearts -->
+                <div class="couple-hearts" id="coupleHearts"></div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-sparkles">
+                    <span>✨</span>
+                    <span>💫</span>
+                    <span>✨</span>
+                </div>
+                <h1 class="main-title">
+                    <span class="title-line">Malam</span>
+                    <span class="title-line highlight">Tahun Baru</span>
+                    <span class="title-line">Romantis</span>
+                </h1>
+                <p class="subtitle">
+                    <span class="heart-icon">💑</span>
+                    Bersama Cinta Tercinta
+                    <span class="heart-icon">💑</span>
+                </p>
+            </section>
+            
+            <!-- Countdown Section -->
+            <section class="countdown-section">
+                <h2 class="section-title">
+                    <span class="emoji">🎊</span>
+                    Menuju Tahun Baru 2025
+                    <span class="emoji">🎊</span>
+                </h2>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-flip">
+                            <span class="countdown-number" id="days">00</span>
+                        </div>
+                        <span class="countdown-label">Hari</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-flip">
+                            <span class="countdown-number" id="hours">00</span>
+                        </div>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-flip">
+                            <span class="countdown-number" id="minutes">00</span>
+                        </div>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-item">
+                        <div class="countdown-flip">
+                            <span class="countdown-number" id="seconds">00</span>
+                        </div>
+                        <span class="countdown-label">Detik</span>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Love Letter Section -->
+            <section class="love-letter-section">
+                <div class="love-letter">
+                    <div class="letter-seal">💝</div>
+                    <h2 class="letter-title">Untuk Cintaku</h2>
+                    <div class="letter-decoration top-left">❦</div>
+                    <div class="letter-decoration top-right">❦</div>
+                    <div class="letter-content">
+                        <p>
+                            Di malam pergantian tahun ini, aku ingin menggenggam tanganmu erat,
+                            melihat kembang api bersama, dan berbisik bahwa kamu adalah 
+                            resolusi terbaik yang pernah aku buat.
+                        </p>
+                        <p>
+                            Terima kasih telah menjadi bagian dari ceritaku. Mari kita awali 
+                            tahun baru dengan cinta yang lebih dalam dan kebersamaan yang lebih indah.
+                        </p>
+                        <p class="letter-quote">
+                            "Bersamamu, setiap detik terasa seperti perayaan..."
+                        </p>
+                    </div>
+                    <div class="letter-signature">
+                        <span class="signature-heart">💕</span>
+                        <span class="signature-text">Dengan Segenap Cinta</span>
+                    </div>
+                    <div class="letter-decoration bottom-left">❦</div>
+                    <div class="letter-decoration bottom-right">❦</div>
+                </div>
+            </section>
+            
+            <!-- Wishes Section -->
+            <section class="wishes-section">
+                <h2 class="section-title">
+                    <span class="emoji">💫</span>
+                    Harapan di Tahun Baru
+                    <span class="emoji">💫</span>
+                </h2>
+                <div class="wishes-grid">
+                    <div class="wish-card" data-aos="fade-up">
+                        <div class="wish-icon">💑</div>
+                        <div class="wish-glow"></div>
+                        <h3 class="wish-title">Cinta Abadi</h3>
+                        <p class="wish-text">Semoga cinta kita semakin kuat dan abadi sepanjang tahun baru ini</p>
+                    </div>
+                    <div class="wish-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="wish-icon">🌟</div>
+                        <div class="wish-glow"></div>
+                        <h3 class="wish-title">Impian Bersama</h3>
+                        <p class="wish-text">Mari wujudkan semua impian kita bersama di tahun yang baru</p>
+                    </div>
+                    <div class="wish-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="wish-icon">🏠</div>
+                        <div class="wish-glow"></div>
+                        <h3 class="wish-title">Kebahagiaan</h3>
+                        <p class="wish-text">Semoga rumah tangga kita dipenuhi kebahagiaan dan kedamaian</p>
+                    </div>
+                    <div class="wish-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="wish-icon">✈️</div>
+                        <div class="wish-glow"></div>
+                        <h3 class="wish-title">Petualangan</h3>
+                        <p class="wish-text">Tahun depan, mari jelajahi dunia bersama dan ciptakan kenangan indah</p>
+                    </div>
+                    <div class="wish-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="wish-icon">💪</div>
+                        <div class="wish-glow"></div>
+                        <h3 class="wish-title">Kesehatan</h3>
+                        <p class="wish-text">Semoga kita selalu sehat dan kuat untuk menjalani hari bersama</p>
+                    </div>
+                    <div class="wish-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="wish-icon">🙏</div>
+                        <div class="wish-glow"></div>
+                        <h3 class="wish-title">Berkah</h3>
+                        <p class="wish-text">Semoga Tuhan selalu memberkati perjalanan cinta kita</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Gallery Section -->
+            <section class="gallery-section">
+                <h2 class="section-title">
+                    <span class="emoji">📸</span>
+                    Momen Kita
+                    <span class="emoji">📸</span>
+                </h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="polaroid">
+                            <div class="polaroid-image">
+                                <span class="placeholder-emoji">🌅</span>
+                            </div>
+                            <p class="polaroid-caption">Sunset bersama</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="polaroid">
+                            <div class="polaroid-image">
+                                <span class="placeholder-emoji">🎡</span>
+                            </div>
+                            <p class="polaroid-caption">Date malam</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="polaroid">
+                            <div class="polaroid-image">
+                                <span class="placeholder-emoji">🏖️</span>
+                            </div>
+                            <p class="polaroid-caption">Liburan pantai</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="polaroid">
+                            <div class="polaroid-image">
+                                <span class="placeholder-emoji">🎄</span>
+                            </div>
+                            <p class="polaroid-caption">Natal bersama</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Promise Section -->
+            <section class="promise-section">
+                <div class="promise-card">
+                    <div class="promise-rings">💍</div>
+                    <h2 class="promise-title">Janjiku Untukmu</h2>
+                    <ul class="promise-list">
+                        <li>
+                            <span class="promise-check">✓</span>
+                            Akan selalu ada untukmu
+                        </li>
+                        <li>
+                            <span class="promise-check">✓</span>
+                            Mencintaimu setiap hari
+                        </li>
+                        <li>
+                            <span class="promise-check">✓</span>
+                            Menjagamu selamanya
+                        </li>
+                        <li>
+                            <span class="promise-check">✓</span>
+                            Membahagiakanmu selalu
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-hearts">
+                <span>💕</span>
+                <span>💖</span>
+                <span>💕</span>
+            </div>
+            <p class="footer-text">Dibuat dengan 💝 untuk malam yang istimewa</p>
+            <p class="footer-year">Selamat Tahun Baru 2025! 🎊</p>
+            <div class="footer-couple">👫</div>
+        </footer>
+    </div>
+    
+    <!-- New Year Celebration Overlay -->
+    <div class="celebration-overlay" id="celebrationOverlay">
+        <div class="celebration-content">
+            <div class="celebration-text">
+                <span class="celebration-year">2025</span>
+                <span class="celebration-message">Happy New Year!</span>
+                <span class="celebration-love">💕 I Love You 💕</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Click Hint -->
+    <div class="click-hint" id="clickHint">
+        <span>✨ Klik di mana saja untuk kembang api ✨</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
